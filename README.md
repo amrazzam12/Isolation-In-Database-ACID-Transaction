@@ -109,7 +109,7 @@ Transaction 1 :
 SELECT (price * quantity) FROM products WHERE id = 1
 
 <p dir="rtl">
-نتيجته هتبقى 30.</p>
+نتيجته هتبقى 20 </p>
 
 
 <p dir="rtl">
@@ -121,7 +121,7 @@ Transaction 2 :
 UPDATE products SET quantity = 5 WHERE id = 1
 
 <p dir="rtl">
-لو كررت نفس الاستعلام تاني في Transaction 1، النتيجة هتتغير وتبقى 50 بدلاً من 30. \
+لو كررت نفس الاستعلام تاني في Transaction 1، النتيجة هتتغير وتبقى 50 بدلاً من 20  \
 ودي مشكلة برده , مع ان فعلا النتيجة الصح 50 لان الابديت علي الquantity حصل فعلا , بس فحالات معينة دا هيعمل مشاكل ان نفس الكويري ترجع نتايج مختلفة </p>
 
 
